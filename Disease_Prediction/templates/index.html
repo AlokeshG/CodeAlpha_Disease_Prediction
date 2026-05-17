@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Heart Disease Prediction</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+❤️ Heart Disease <br>
+Prediction System
+</h1>
+
+<form method="POST">
+
+<input
+type="number"
+name="age"
+placeholder="Age"
+required>
+
+
+<input
+type="number"
+name="sex"
+placeholder="Sex (1=Male,0=Female)"
+required>
+
+
+<input
+type="number"
+name="chest_pain"
+placeholder="Chest Pain Type (0-3)"
+required>
+
+
+<input
+type="number"
+name="bp"
+placeholder="Resting Blood Pressure"
+required>
+
+
+<input
+type="number"
+name="cholesterol"
+placeholder="Cholesterol"
+required>
+
+
+<input
+type="number"
+name="fbs"
+placeholder="Fasting Blood Sugar"
+required>
+
+
+<input
+type="number"
+name="ecg"
+placeholder="Resting ECG"
+required>
+
+
+<input
+type="number"
+name="max_hr"
+placeholder="Maximum Heart Rate"
+required>
+
+
+<input
+type="number"
+name="angina"
+placeholder="Exercise Angina"
+required>
+
+
+<input
+type="number"
+step="0.1"
+name="oldpeak"
+placeholder="Old Peak"
+required>
+
+
+<input
+type="number"
+name="slope"
+placeholder="ST Slope"
+required>
+
+
+<button type="submit">
+
+Predict
+
+</button>
+
+</form>
+
+<h2>
+
+{{ prediction }}
+
+</h2>
+
+</div>
+
+</body>
+
+</html>
